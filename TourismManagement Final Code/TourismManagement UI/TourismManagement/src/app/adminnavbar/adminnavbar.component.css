@@ -1,0 +1,23 @@
+li a
+{
+font-weight: 700;
+font-size: large;
+font-family: Georgia, 'Times New Roman', Times, serif;
+color: black; 
+}
+
+.active{
+    color: red;
+}
+
+/* Normal state styling */
+.navbar-nav li.nav-item a.nav-link {
+    color: #000; /* Set the default color */
+    transition: color 0.3s; /* Add a smooth transition effect */
+}
+
+/* Hover state styling */
+.navbar-nav li.nav-item a.nav-link:hover {
+   background-color:#ffde59; /* Change the color on hover */
+   height: 100%;
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+
+  </style>
+</head>
+
+<body>
+
+
+  <nav class="navbar navbar-expand-lg navbar bg-light">
+    <div class=" container-fluid">
+      <a class="navbar-brand" routerLink="/"> <img src="assets/images/logo.jpeg" alt="Circular Image" class=" img-fliud"
+          style="width: 280px; height: 75px;">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" [routerLink]="['packages']">Packages</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" [routerLink]="['userpackages']">User Packages</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- <button type="button" class="btn btn-dark" >{{cName}}</button> -->
+    <div>    
+        <a class="navbar-brand" routerLink="/">
+        <button type="button" class="btn btn-outline-success" (click)="logout()">Logout</button>
+      </a>
+    </div>
+    <ng-template #elseBlock>
+
+    </ng-template>
+  </nav>
+</body>
+
+</html>

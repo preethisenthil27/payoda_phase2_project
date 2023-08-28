@@ -1,0 +1,11 @@
+li a
+{
+font-weight: 700;
+font-size: large;
+font-family: Georgia, 'Times New Roman', Times, serif;
+color: black; 
+}
+
+.active{
+    color: red;
+}

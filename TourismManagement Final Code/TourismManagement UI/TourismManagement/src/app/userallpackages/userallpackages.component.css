@@ -1,0 +1,94 @@
+
+.background-image {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: .9;
+    /* Adjust the opacity as needed */
+    background-size: cover;
+}
+
+.custom-form {
+   
+    max-width: 1000px;
+    /* margin: 0 ; */
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    /* box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); */
+}
+
+.bgfont {
+    font-size: large;
+    font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: rgba(255, 255, 255, 0.0);
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Add any additional styling as needed */
+.pkname
+{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+   
+    font-size: large;
+    text-decoration: none;
+}
+ a
+{
+    text-decoration:none;
+}
+.pklocation
+{
+    text-decoration: none;
+}
+
+/* styles.css */
+/* .card-zoom {
+    transition: transform 0.3s; 
+  }
+  
+  .card-zoom:hover {
+    transform: scale(1.05); 
+  } */
+   .card {
+    transition: transform 0.3s ease;
+  }
+  .card:hover {
+    transform: scale(1.05);
+  }
+  
+  .pkname {
+    font-size: 1.2rem;
+    /* font-weight:bold ; */
+    margin-top: 5px;
+  }
+  .pklocation, .pkduration {
+    color: #888;
+    margin-bottom: 5px;
+  }  
+  .pkdurname
+  {
+    color: #f8a06d;
+  }
+  #addbutton {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: green;
+    color: #fff;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+#addbutton:hover {
+    background-color:green;
+    color: #fff;
+}

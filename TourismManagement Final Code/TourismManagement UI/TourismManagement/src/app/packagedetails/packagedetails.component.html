@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <main >
+      <!-- <form  (ngSubmit)="GetPackageByPackagename()">
+        <div class="form-group" >
+            <label for="studid"> Package Name : </label>
+            <input type="text" [(ngModel)]="packagename" name="packagename" placeholder="Enter Package Name" >
+        </div>
+        <div class="form-group" >
+            <input type="submit" value="Submit" class="btn btn-success">
+        </div>
+    
+    </form> -->
+        <div class="container mt-2 mb-5" *ngIf="package">
+          <div class="row g-5">
+            <div class="col-8">
+              <div class="pktext"><hr>
+                <h2>{{package.packageName}}</h2>
+                <p class="pklocation"><i class="bi bi-geo-alt-fill"></i>{{package.spotName}} </p>
+                <hr>
+              </div>
+              <div class="row">
+                <div class="col-1">
+                  <p class="pkduration"><i class="bi bi-clock-fill"></i></p>
+                </div>
+                <div class="col-4">
+                  <p class="pktext">Duration</p>
+                  <p>{{package.packageDuration}}</p>
+                </div>
+                <div class="col-1">
+                  <p class="pkduration"><i class="bi bi-people-fill"></i></p>
+                </div>
+                <div class="col-5">
+                  <p class="pktext">Group Size</p>
+                  <p class="pktext">Unlimited</p>
+                </div>
+              </div>
+            
+      
+              <div>
+                <img src="assets/images/card2.jpeg"
+                  class="card-img-top" alt="...">
+                <hr>
+              </div>
+              <div class="pkdes">
+                <h2>Itinerary</h2>
+                <div class="card mb-4">
+                  <div class="card-body">
+                    <p>{{package.packageDescription1}}</p>
+                  </div>
+                </div>
+                <div class="card mb-4">
+                  <div class="card-body">
+                    <p>{{package.packageDescription2}}</p>
+                  </div>
+                </div>
+                <div class="card mb-4">
+                  <div class="card-body">
+                    <p>{{package.packageDescription3}}</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+           <div class="col-4">
+            <app-bookingform [packages]="package"></app-bookingform>
+           </div>
+          </div>
+        </div>
+        
+        <app-userallpackages ></app-userallpackages>
+      </main>
+      
+</body>
+
+</html>

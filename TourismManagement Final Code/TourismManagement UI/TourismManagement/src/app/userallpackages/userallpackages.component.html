@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TourismManagement</title>
+</head>
+<body>
+   <div    class="container">
+    <a class=" mt-2 mb-1 mr-2" [routerLink]="['/addpackages']" *ngIf="role ==='admin'" id="addbutton">
+        + Add Package
+    </a>&nbsp;&nbsp;&nbsp;
+    <!-- <a class=" mt-2 mb-1 mr-2" [routerLink]="['/addpackages']" *ngIf="role ==='admin'" id="addbutton">
+       Delete
+    </a> -->
+    <!-- <form >
+        <div class="form-group" >
+            <label for="studid"> Id : </label>
+            <input type="text" id="studid" class="form-control"
+            name="studid" [(ngModel)]="packageName">
+        </div>
+        </form> -->
+   </div>
+    <main>
+      
+        <div class="allpackages">
+          
+            <div class="container mt-5 mb-5">
+                
+                <div class="row row-cols-1 row-cols-md-4 g-5">
+                    <div class="col"  *ngFor="let package of packages" >
+                        <a style="text-decoration: none;" [routerLink]="['/usercom',package.packageName,package.packageId,'detail']">
+                            <div class="card h-100 card-zoom"  >
+                                <div class="card h-100">
+                                    <img src="assets/images/card1.jpeg"
+                                        class="card-img-top" alt="..." />
+                                    <div class="card-body">
+                                        <p class="pklocation"><i class="bi bi-geo-alt-fill"> </i>{{package.spotName}}</p>
+                                        <p class="pkname">{{package.packageName}}</p>
+                                        <p class="pkduration">
+                                            <i class="bi bi-clock-fill"></i> <span class="pkdurname m-2">{{package.packageDuration}}</span>
+                                        </p>
+                                          
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
